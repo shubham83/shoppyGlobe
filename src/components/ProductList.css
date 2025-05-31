@@ -1,0 +1,95 @@
+/* Container padding and centered margin */
+.product-list-container {
+  padding: 1rem;
+  margin: 0 auto;
+}
+/* Product list uses flexbox to wrap items with gaps and centers them */
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+/* Remove underline from product links */
+.product-list a {
+  text-decoration: none;
+
+}
+/* Row for heading and search aligned with space between */
+.products-search-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.5rem 3.5rem;
+  margin-bottom: 20px;
+}
+/* Heading style */
+.products-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+
+}
+/* Search bar container aligns items to right with gap */
+.search-bar-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-grow: 1;
+  max-width: 500px;
+  justify-content: flex-end;
+}
+/* Search input style with padding, border, radius, and smooth focus effect */
+.search-bar {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: black;
+  box-shadow: 0 0 5px black;
+}
+/* Search button styling: black background, white text, centered icon/text */
+.search-btn {
+  background-color: #000;
+  border: none;
+  padding: 0 1rem;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #333;
+}
+/* Responsive adjustments for small screens */
+@media (max-width:500px) {
+
+  .products-search-row {
+    padding: 0.5rem;
+  }
+
+  .products-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .product-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+}

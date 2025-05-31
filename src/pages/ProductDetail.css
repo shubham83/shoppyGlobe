@@ -1,0 +1,181 @@
+/* Main container with max width, centered and padded */
+.product-detail-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  display: flex;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.699);
+  flex-wrap: wrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 3px solid black;
+}
+/* Image container with fixed size and centered content */
+.product-detail-image {
+  flex: 1 1 400px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 400px;
+}
+/* Image fills height, keeps aspect ratio inside container */
+.product-detail-image img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+/* Info section with flexible width and margin on top */
+.product-detail-info {
+  flex: 2;
+  min-width: 300px;
+  margin-top: 30px;
+}
+/* Product title with large bold font and spacing */
+.product-detail-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+/* Bold section headings with spacing */
+.product-detail-brand,.product-detail-price,.product-detail-rating,.product-detail-description{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Brand text with normal weight and darker color */
+.product-detail-brand span {
+  font-weight: 400;
+  color: #333;
+}
+/* Price styling with smaller font and spacing */
+.product-detail-price span {
+  font-size: 15px;
+  color: #222;
+  font-weight: 500;
+  margin: 10px 0;
+}
+/* Rating text styling */
+.product-detail-rating span{
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+}
+
+
+/* Description paragraph with readable font size and line height */
+.product-detail-description p {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  font-weight: 400;
+}
+/* Purchase section with horizontal layout and spacing */
+.product-detail-purchase {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+/* Label in purchase section with medium boldness */
+.product-detail-purchase label {
+  font-weight: 600;
+  color: #222;
+}
+/* Styled select dropdown */
+.product-detail-purchase select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+/* Add to cart button with black background and white text */
+.product-detail-add-to-cart-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Hover effect darkens the button */
+.product-detail-add-to-cart-btn:hover {
+  background-color: #333;
+}
+
+/* Tablet and below: stack container vertically and adjust sizes */
+@media (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
+    padding: 25px;
+    max-width: 90%;
+  }
+
+  .product-detail-image {
+    flex: none;
+    max-width: 100%;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .product-detail-image img {
+    height: 300px;
+  }
+
+  .product-detail-info {
+    min-width: 100%;
+    margin-top: 20px;
+  }
+
+  .product-detail-title {
+    font-size: 28px;
+  }
+
+  .product-detail-description p {
+    font-size: 15px;
+  }
+
+  .product-detail-purchase select,
+  .product-detail-add-to-cart-btn {
+    font-size: 15px;
+  }
+}
+/* Mobile: tighter padding and smaller image, fonts, buttons */
+@media (max-width: 500px) {
+
+     .product-detail-container {
+    padding: 10px;
+    margin: 20px 10px;
+  }
+
+  .product-detail-image {
+    max-width: 100%;
+    height: 180px;
+  }
+
+  .product-detail-image img {
+    height: 180px;
+  }
+
+  .product-detail-title {
+    font-size: 24px;
+  }
+
+  .product-detail-description p {
+    font-size: 14px;
+  }
+
+  .product-detail-purchase select,
+  .product-detail-add-to-cart-btn {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}

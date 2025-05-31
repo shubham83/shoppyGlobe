@@ -1,0 +1,104 @@
+
+/* Product card container with border, shadow, padding, and smooth hover effect */
+.product-card {
+    background-color: yellowgreen;
+    border: 1px solid rgb(205, 202, 202);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 2px 4px 10px rgb(163, 162, 162);
+    transition: all 0.2s ease;
+    text-align: center;
+    max-width: 500px;
+    flex: 1 1 300px;
+}
+/* Hover effect: subtle lift and border highlight */
+.product-card:hover {
+    transform: translateY(-4px);
+    border: 2px solid black;
+}
+/* Product image fills container width, fixed height, rounded corners */
+.product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+}
+/* Product title styling */
+.product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+/* Price styling with green color emphasis */
+.product-price {
+    font-size: 0.95rem;
+    color:#017d60;
+    font-weight: 500;
+      margin-bottom: 0.5rem;
+}
+/* Add to cart button with green background and smooth hover */
+.add-to-cart-btn {
+    padding: 0.5rem 1rem;
+    background-color: #017d60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+.add-to-cart-btn:hover {
+    background-color: #005f47;
+}
+/* Quantity control buttons container: centered with gap */
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+/* Quantity buttons with neutral background and pointer cursor */
+.quantity-controls button {
+    padding: 4px 10px;
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 500px) {
+  .product-card {
+    flex: 1 1 48%;
+    max-width: 48%;
+    padding: 0.5rem;
+  }
+
+  .product-image {
+    height: 120px; 
+  }
+
+  .product-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .product-price {
+    font-size: 0.85rem;
+  }
+
+  .add-to-cart-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .quantity-controls button {
+    padding: 2px 8px;
+    font-size: 16px;
+  }
+}
+
+
+

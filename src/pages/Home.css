@@ -1,0 +1,23 @@
+/* Main container with max width, centered horizontally with margin, and horizontal padding */
+.home-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+ text-align: center;
+ background-color: aqua; 
+ 
+}
+/* Styling for welcome message text */
+.welcome-message {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 2rem;
+  text-shadow: 4px 4px 10px gray;
+}
+/* Responsive adjustment for smaller screens (max width 500px) */
+@media (max-width:500px){
+  .welcome-message{
+    font-size: 1.5rem;
+  }
+}
+

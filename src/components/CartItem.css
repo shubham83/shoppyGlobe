@@ -1,0 +1,63 @@
+/* Cart item container: horizontal layout with spacing and bottom border */
+.cart-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+/* Set fixed width for images and preserve aspect ratio with contain */
+.cart-item-img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+/* Allow text details to fill remaining space */
+.cart-item-details {
+  flex: 1;
+}
+/* Align quantity buttons horizontally, centered with equal gaps */
+.cart-quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+/* Add padding and increase font size for quantity buttons */
+.cart-quantity-control button {
+  padding: 4px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* Use red background with white text for remove button to indicate danger */
+
+.remove-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* Darken red color on hover to show interactivity */
+.remove-btn:hover {
+  background-color: #e64545;
+}
+/* Responsive adjustments for small screens */
+
+@media (max-width: 500px) {
+  /* Align quantity controls to the start for better mobile layout */
+  .cart-quantity-control {
+    justify-content: flex-start;
+  }
+ /* Add spacing above remove button to avoid crowding */
+  .remove-btn {
+    margin-top: 10px;
+  }
+ /* Increase spacing below headings and paragraphs for clarity */
+  .cart-item-details h3,
+  .cart-item-details p {
+    margin-bottom: 15px;
+  }
+}

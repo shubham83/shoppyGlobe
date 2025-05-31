@@ -1,0 +1,25 @@
+/* Container that centers spinner both vertically and horizontally, fills viewport height */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* The spinner itself: circular shape with colored border except top, animated to spin */
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #3b82f6;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+/* Defines the spin animation: rotates from 0 to 360 degrees infinitely */
+@keyframes spin {
+    from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

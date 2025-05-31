@@ -1,0 +1,19 @@
+/* Container for the 404 Not Found page styling ( text color) */
+.not-found-page {
+  color: #444;
+}
+
+/* Styling the "Go back to Home" link (layout, spacing, colors, and border radius) */
+.back-home-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color:rgb(52, 46, 46);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* Hover effect styling for the back-home link (background color change) */
+.back-home-link:hover {
+  background-color:black;
+}

@@ -1,0 +1,45 @@
+/* Container for the cart section: max width, centered, padded, with some top margin */
+.cart-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 10px;
+}
+/* Title of the cart: centered, large font, spaced below */
+.cart-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+/* Message shown when cart is empty: centered, medium font, muted color */
+.empty-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+/* List of cart items: vertical stack with gaps between items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Cart total price section: right-aligned with top margin */
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+}
+/* Checkout button: black background, white text, padding, rounded corners, pointer cursor */
+.checkout-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+/* Checkout button hover effect: slightly transparent black */
+.checkout-btn:hover {
+  background-color: rgba(0, 0, 0, 0.863);
+}
